@@ -22,14 +22,6 @@ public class CarController {
     public Car getCar(@RequestParam String model) {
         return carService.getCar(model);
     }
-
-    private final CarRepository carRepository;
-    private final Strign name;
-
-    public CarService(CarRepository carRepository) {
-        this.carRepository = carRepository;
-        this.name = "김준일";
-    }
 }
 
 
